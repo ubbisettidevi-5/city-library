@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>City Library | Home</title>
+    <meta name="description" content="Discover books, ebooks, events, and resources at the City Library. Accessible, community-focused services for all.">
+    <link rel="preload" href="src/css/styles.css" as="style">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="icon" href="src/assets/img/favicon.ico">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="logo" href="/" style="font-size: 2rem;">City Library</a>
+        <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menu</button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="pages/catalog.html">Catalog</a></li>
+            <li><a href="pages/resources.html">Digital Resources</a></li>
+            <li><a href="pages/events.html">Events</a></li>
+            <li><a href="pages/locations.html">Locations & Hours</a></li>
+            <li><a href="pages/research.html">Research & Learning</a></li>
+            <li><a href="pages/account.html">My Account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main" tabindex="-1">
+      <section class="hero" aria-label="Library search and highlights">
+        <div class="container">
+          <h1>Welcome to City Library</h1>
+          <p>Find books, ebooks, audiobooks, events, and learning tools.</p>
+
+          <form class="search" role="search" aria-label="Catalog search" action="pages/catalog.html">
+            <label class="visually-hidden" for="q">Search the catalog</label>
+            <input id="q" name="q" type="search" placeholder="Search books, authors, subjects" aria-describedby="search-help" required>
+            <button type="submit">Search</button>
+            <div id="search-help" class="help-text">Try “mystery ebooks”, “African history”, or an author name.</div>
+          </form>
+
+          <div class="quick-actions" role="navigation" aria-label="Quick actions">
+            <a class="qa" href="pages/locations.html">Hours & Locations</a>
+            <a class="qa" href="pages/resources.html">Digital Library</a>
+            <a class="qa" href="pages/events.html">Today’s Events</a>
+            <a class="qa" href="pages/account.html">Get a Card / My Account</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured" aria-labelledby="featured-heading">
+        <div class="container">
+          <h2 id="featured-heading">New & Noteworthy</h2>
+          <ul class="card-grid" role="list">
+            <li class="card">
+              <img src="src/assets/img/placeholder-1.jpg" alt="Book cover placeholder">
+              <h3>Staff Picks</h3>
+              <p>Handpicked reads from our librarians.</p>
+              <a class="button" href="pages/catalog.html">Browse Picks</a>
+            </li>
+            <li class="card">
+              <img src="src/assets/img/placeholder-2.jpg" alt="People attending a library workshop">
+              <h3>Workshops & Classes</h3>
+              <p>Learn new skills for work, school, and life.</p>
+              <a class="button" href="pages/events.html">See Events</a>
+            </li>
+            <li class="card">
+              <img src="src/assets/img/placeholder-3.jpg" alt="Phone showing an ebook app">
+              <h3>eBooks & Audiobooks</h3>
+              <p>Read or listen anywhere with your library card.</p>
+              <a class="button" href="pages/resources.html">Start Reading</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div>
+          <h2 class="footer-heading">City Library</h2>
+          <p><a href="pages/accessibility.html">Accessibility</a> • <a href="#" aria-label="Privacy policy">Privacy</a> • <a href="#" aria-label="Contact us">Contact</a></p>
+        </div>
+        <form class="newsletter" aria-labelledby="newsletter-heading">
+          <h3 id="newsletter-heading">Newsletter</h3>
+          <label class="visually-hidden" for="email">Email address</label>
+          <input id="email" type="email" placeholder="you@example.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </footer>
+
+    <button id="contrast-toggle" class="contrast-toggle" aria-pressed="false">High contrast</button>
+
+    <script src="src/js/main.js" defer></script>
+  </body>
+  </html>
+
